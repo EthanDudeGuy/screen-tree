@@ -12,4 +12,5 @@ Recursively prints a tree down from the current subdir, marking in green the loc
 ## Issues 
 1) In order to get the cwd for each tab, it sends each tab a command via a 'screen -X stuff' type command, which types the pwd command in that tab and then saves it to a tmp file which the script will read. As a result, all tabs must be outside of programs such as vim, more, man, etc. In other words, the program is typing directly into your screens (including the current one hence the "pwd > tmp/window?.txt" at the top) so if you have vim open it's going to mess up your shit. I'm trying to find ways to do this better, so hang tight homie.
 2) House of Cards really fell off after season two I think.
+3) Water is an underratted bev and people aren't talking about this enough
 
