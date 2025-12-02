@@ -8,7 +8,6 @@ Recursively prints a tree down from the current subdir, marking in green the loc
 ## Usage
 1) Put that shit in your path as screen-tree or something sick and cool
 2) Call it from within a screen session from whatever directory contains the screen tabs you are concerned about
-3) Call it from your path with whatever sick name you gave it
 
 ## Issues 
 1) In order to get the cwd for each tab, it sends each tab a command via a 'screen -X stuff' type command, which types the pwd command in that tab and then saves it to a tmp file which the script will read. As a result, all tabs must be outside of programs such as vim, more, man, etc. In other words, the program is typing directly into your screens (including the current one hence the "pwd > tmp/window?.txt" at the top) so if you have vim open it's going to mess up your shit. I'm trying to find ways to do this better, so hang tight homie.
